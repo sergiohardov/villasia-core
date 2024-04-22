@@ -46,6 +46,13 @@ if (!class_exists('VillasiaCore')) {
         public function activate()
         {
             flush_rewrite_rules();
+
+            // Create logs folder if exist
+            if (!file_exists(VILLASIACORE_LOGS_PATH)) {
+                if (!mkdir(VILLASIACORE_LOGS_PATH, 0777, true)) {
+                    return null;
+                }
+            }
         }
 
         public function deactivate()
