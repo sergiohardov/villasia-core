@@ -1,0 +1,15 @@
+{
+  "name": "sergiohardov/villasia-core",
+  "authors": [
+    {
+      "name": "sergiohardov",
+      "email": "sergiohardov@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "VillasiaCore\\": "./includes"
+    }
+  },
+  "require": {}
+}
